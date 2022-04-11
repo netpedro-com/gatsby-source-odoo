@@ -1,0 +1,14 @@
+#
+# IDEs and editors
+#
+.idea/
+.vscode/
+#
+# Operational Systems
+#
+*.DS_Store
+.directory
+#
+# Node
+#
+node_modules/

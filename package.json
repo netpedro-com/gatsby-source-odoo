@@ -1,0 +1,28 @@
+{
+  "name": "gatsby-source-odoo",
+  "version": "1.0.0",
+  "description": "Gatsby source plugin used to fetch Odoo data.",
+  "author": {
+    "name": "Pedro Vagner",
+    "url": "https://www.pedrovagner.com"
+  },
+  "license": "MIT",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/pedrovagner/gatsby-source-odoo.git"
+  },
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "build": "echo \"No build script setup\""
+  },
+  "dependencies": {
+    "node-fetch": "^3.2.3",
+    "odoots": "^0.1.2"
+  },
+  "keywords": [
+    "gatsby",
+    "gatsby-plugin",
+    "odoo"
+  ]
+}
