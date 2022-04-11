@@ -1,6 +1,6 @@
 {
   "name": "gatsby-source-odoo",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "description": "Gatsby source plugin used to fetch Odoo data.",
   "author": {
     "name": "Pedro Vagner",

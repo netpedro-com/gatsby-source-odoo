@@ -61,15 +61,11 @@ module.exports = {
                   'publish_date_time': {},
                 },
                 odooDomain: [['website_ids.name', '=', 'www.example.com']],
-                //
                 // Optionally declare additional fields to be added into Gatsby model.
-                //
                 extraFields: {
                   image_sources: {
                     type: '[String!]!',
-                    //
                     // The "source" object gives you access to any Odoo field declared previously.
-                    //
                     resolve: source => getImageSources(source.content),
                   },
                   video_sources: {
@@ -105,9 +101,11 @@ module.exports = {
 
   - Allows multiple connections from multiple Odoo instances.
   - Automatic field type inference.
+  - Automatic `many2many` and `many2one` relations (missing `one2many` implementation because I never needed it).
   - Allows value transformation and customized extra fields.
-  - Incremental data update (once it fetches all Odoo records, successive calls only fetches modified data).
-  - Optional garbage collector (ensures data deleted on Odoo gets deleted on Gatsby).
+  - Incremental data update: once it fetches all Odoo records, successive calls only fetches modified data.
+  - Optional garbage collector: ensures data deleted on Odoo gets deleted on Gatsby.
+  - Multi-language support: automatically detects installed Odoo languages, and fetch records for each language. 
 
 ## Motivation
 
@@ -119,4 +117,4 @@ Any contribution are welcome. This project follows [Semantic Versioning](https:/
 
 ## License
 
-See [LICENSE](./LICENSE.md) (MIT).
+See [LICENSE](LICENSE.md) (MIT).
