@@ -18,7 +18,7 @@ module.exports = {
   plugins: [
     {
       // This plugin was designed to be declared only once (but accept as many connections as you want).
-      // Don't declare it more than once, otherwise bad things can happen (this can be easily fixed).
+      // Don't declare it more than once, otherwise bad things can happen (this can be easily improved).
       resolve: 'gatsby-source-odoo',
       options: {
         connections: [
@@ -41,6 +41,7 @@ module.exports = {
                     change: (value) => value || '',
                   },
                   'slug': {},
+                  // Automatic post relationship.
                   'post_ids': {},
                   'create_date_time': {
                     // This ensures a default value when fetched Odoo data is a boolean "False" (Odoo annoyances).
@@ -57,6 +58,7 @@ module.exports = {
                   'title': {},
                   'content': {},
                   'slug': {},
+                  // Automatic tag relationship.
                   'tag_ids': {},
                   'publish_date_time': {},
                 },
@@ -109,7 +111,7 @@ module.exports = {
 
 ## Motivation
 
-This plugin was created to generate my personal static website (<https://www.pedrovagner.com>). It uses Odoo (<https://github.com/odoo>) as a CMS (Content Management System). I'm very satisfied with the final result, it was a great achievement that I'm really proud of, and very happy to share with anyone.
+This plugin was created to generate my personal static website (<https://www.pedrovagner.com>). It uses Odoo (<https://github.com/odoo>) as a CMS (Content Management System). I'm very satisfied with the final result, it was a great achievement that I'm really proud of, and very happy to share it with everyone.
 
 ## Contribution
 
