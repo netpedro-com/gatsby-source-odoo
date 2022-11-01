@@ -1,4 +1,4 @@
-Copyright (c) 2022 PedroVagner.com
+Copyright (c) 2022 github.com/pedro-net
 
 Permission is hereby granted, free of charge, to any person obtaining a copy
 of this software and associated documentation files (the "Software"), to deal

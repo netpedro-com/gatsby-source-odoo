@@ -109,13 +109,9 @@ module.exports = {
   - Optional garbage collector: ensures data deleted on Odoo gets deleted on Gatsby.
   - Multi-language support: automatically detects installed Odoo languages, and fetch records for each language. 
 
-## Motivation
-
-This plugin was created to generate my personal static website (<https://www.pedrovagner.com>). It uses Odoo (<https://github.com/odoo>) as a CMS (Content Management System). I'm very satisfied with the final result, it was a great achievement that I'm really proud of, and very happy to share it with everyone.
-
 ## Contribution
 
-Any contribution are welcome. This project follows [Semantic Versioning](https://semver.org/).
+Any contribution are welcome.
 
 ## License
 
